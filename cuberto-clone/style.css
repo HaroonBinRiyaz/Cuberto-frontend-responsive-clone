@@ -1,0 +1,412 @@
+@font-face {
+  font-family: suisseregular;
+  src: url(./fonts/suisseintl-regular.woff2);
+}
+
+@font-face {
+  font-family: suissemedium;
+  src: url(./fonts/suisseintl-medium.woff2);
+}
+@font-face {
+  font-family: suissebold;
+  src: url(./fonts/suisseintl-bold.woff2);
+}
+@font-face {
+  font-family: suisselight;
+  src: url(./fonts/suisseintl-light.woff2);
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+  body[data-aos-duration='1200'] [data-aos],
+  [data-aos][data-aos][data-aos-duration='1200'] {
+    transition-duration: 1200ms;
+  }
+
+
+
+#main{
+  width: 100vw;
+  
+}
+
+#main #homeMain{
+  width: 100%;
+  height: 250px;
+  padding-top: 30px;
+  color: black;
+  text-align: center;
+  font-family: suisseregular;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+#insideMain{
+  width: 60%;
+}
+
+#insideMain h1{
+  font-size: 2.5em;
+  line-height: 1;
+  text-size-adjust: 100%;
+}
+
+#main #homeMain #insideMain p{
+  margin-top: 2vw;
+  font-size: 1.7vw;
+}
+
+
+#main nav{
+  background: rgba(255, 255, 255, 0.604);
+  position: sticky;
+  top: 0; 
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  gap: 170px;
+  padding-top: 1.3vw;
+  font-family: suissemedium;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+  
+  
+}
+
+#main nav #leftnav{
+  letter-spacing: 1px;
+  font-size: 1.6vw;
+}
+
+#main nav #rightnav{
+  display:flex;
+  gap: 3vw;
+  font-family: suisseregular;
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  
+  
+}
+
+#main #video-box{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#main #video-box #mainvideo{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+#main #video-box #mainvideo video{
+  width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#main #history{
+  display: flex;
+  width: 100%;
+  padding: 10px 60px;
+  gap: 60px;
+  font-family: suisseregular, sans-serif;
+  text-align: left;
+  font-weight: 100;
+
+}
+
+#main #history #righttext{
+  width: 50%;
+  line-height: 1.5;
+  padding-top: 50px;
+  font-size: 1em;
+  
+}
+
+#main #history #righttext p{
+  font-size: 0.9em;
+  width: 265px;
+  line-height: 1;
+}
+
+
+#main #history #leftvideo{
+  width:50%;
+  height: 50%;
+  object-fit: cover;
+ 
+}
+
+#main #history #leftvideo video{
+ width: 100%;
+ height: 100%;
+}
+
+#main #history #righttext button{
+  margin-top: 3vw;
+  height: 44px;
+  width: 120px;
+  border-radius: 50px;
+  border: 0.8px rgb(0, 0, 0) solid;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+
+ 
+}
+
+#main #connect{
+  width: 100%;
+  position: relative;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #000;
+  
+  
+  
+}
+#main #connect #connect-video{
+  width: 99%;
+  height: max-content;
+  object-fit: cover;
+  
+  
+}
+#main #connect video{
+  width: 100%;
+  position: relative;
+  height: max-content;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  object-fit: cover;
+}
+
+#main #connect #connect-text{
+  color: white;
+  position: absolute;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: suisseregular;
+  font-weight: 100;
+  font-size: 25px;
+  text-align: center;
+}
+
+#main #connect-text .blackbtn{
+  height: 80px;
+  width: 250px;
+  border-radius: 50px;
+  border: 0.8px white, solid;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 6vw;
+
+}
+#main #info{
+  width: 100%;
+  background-color: #000;
+  color:white;
+  display: flex;
+  font-family:suisselight;
+  align-items: center;
+  font-size: 2vw;
+  text-align: left;
+  justify-content: space-around;
+  padding: 80px 30px;
+}
+
+#main #info p{
+  margin-left: 10px;
+  color: grey;
+}
+
+#main #info span{
+  color:white;
+  font-family:suissebold;
+}
+
+
+
+#main #info .blackbtn{
+  height: 80px;
+  width: 250px;
+  border-radius: 50px;
+  border: 0.8px white, solid;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 3vw;
+}
+
+
+
+
+@media (max-width: 2000px) {
+  .menu{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 600px){
+  
+  .menu{
+    display:block;
+    font-size: 6.5vw;
+  }
+  .tag-link{
+    display: none;
+  }
+
+  #main #leftnav h3{
+    font-size: 6vw;
+  
+  }
+
+  
+
+  #main #homeMain #insideMain{
+    width: 90%;
+    
+   }
+   #main #homeMain{
+    height: fit-content;
+    padding: 60px 5px 30px 5px;
+   }
+  #insideMain h1{
+    text-align: left;
+    font-size: 10vw;
+  }
+
+  #main #homeMain #insideMain p{
+    text-align: left;
+    font-size: 5vw;
+    margin-top: 30px;
+    
+  }
+  #main nav{
+    gap: 62%;
+    padding: 0 10px;
+  }
+
+  #main #video-box #mainvideo{
+   width: 100%;
+   height: 100%;
+   
+  }
+  #main #video-box #mainvideo video{
+   width: 90%;
+   height: 100%;
+   
+  }
+  #main #video-box{
+    
+    width: 100%;
+  }
+  #main #history{
+    padding: 10px 30px;
+    
+  }
+
+  #main #history #leftvideo{
+    display: none;
+  }
+  #main #history #righttext{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  #main #history #righttext p{
+    font-size: 6.2vw;
+    width: 100%;
+    margin-bottom: 32px;
+    
+  } 
+   #main #history #righttext button{
+    width:90%;
+    height: 80px;
+    font-size: 6vw;
+    margin-bottom: 40px;
+    
+    
+   }
+
+
+   #main #connect #connect-text{
+    font-size: 19px;
+    gap: 5px;
+  
+    
+   }
+   #main #connect-text h1{
+    margin-top: 50px;
+   }
+
+   #main #connect-text button{
+    width: 150px;
+    height: 50px;
+   }
+   #main #info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    font-size: 4vw;
+
+   }
+
+   #main #info .blackbtn{
+    font-size: 5vw;
+   }
+  
+  
+}
+
+
+@media(max-width: 400){
+  
+
+   #main #video-box #mainvideo{
+   width: 100%;
+   height: 200px;
+   
+  }
+}
